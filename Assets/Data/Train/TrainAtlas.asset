@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf78e1eb9265ef3479d68cacd82defed, type: 3}
+  m_Name: TrainAtlas
+  m_EditorClassIdentifier: 
+  trains:
+  - {fileID: 11400000, guid: f85036beff0248448a1a7648e21ec015, type: 2}
+  - {fileID: 11400000, guid: e1cac239621cf0945ad0c4d5f14f8e63, type: 2}
+  - {fileID: 11400000, guid: 0b774cece915b524c97fcb067724f0c3, type: 2}
+  - {fileID: 11400000, guid: 1fe68ea929b7d2c45b3edc85c3f20f27, type: 2}
+  - {fileID: 11400000, guid: 89f22c4716ce2634cb74acc1ac96cce6, type: 2}
+  - {fileID: 11400000, guid: 6afb07249e7952e4ba0cf05c5b612463, type: 2}
+  - {fileID: 11400000, guid: 0cdf0ffbb0d5d7845b0db99b96e16b0b, type: 2}
+  - {fileID: 11400000, guid: 9b42fa119a4efbc4ab2f8903aa4ffba6, type: 2}

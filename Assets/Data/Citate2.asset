@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9275d57009bc8b54292598e212cdeb6e, type: 3}
+  m_Name: Citate2
+  m_EditorClassIdentifier: 
+  title: Gradually Increase Reps
+  text: "If you're new to pull-ups or struggling with them, start with assisted versions
+    (using a resistance band or assisted pull-up machine) or negative pull-ups (jump
+    up and slowly lower yourself down). As your strength improves, gradually increase
+    the number of reps and reduce the assistance until you can do full bodyweight
+    pull-ups.\r"

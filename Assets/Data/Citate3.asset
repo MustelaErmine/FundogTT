@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9275d57009bc8b54292598e212cdeb6e, type: 3}
+  m_Name: Citate3
+  m_EditorClassIdentifier: 
+  title: Use Different Grip Variations
+  text: To develop overall upper-body strength, mix up your grip on pull-ups. Standard
+    overhand grips (pronated) primarily work the back and biceps, while underhand
+    grips (supinated) target your biceps more. You can also try neutral grips (palms
+    facing each other) or wide grips to activate different muscle groups.

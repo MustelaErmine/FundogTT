@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9275d57009bc8b54292598e212cdeb6e, type: 3}
+  m_Name: Citate4
+  m_EditorClassIdentifier: 
+  title: Engage Your Back Muscles
+  text: While it's tempting to focus only on pulling yourself up, remember that the
+    key to an effective pull-up lies in engaging your back muscles. Actively squeeze
+    your shoulder blades together as you pull up, rather than relying solely on your
+    arms. This will recruit more muscle fibers and help build strength faster.
