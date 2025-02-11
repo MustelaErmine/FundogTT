@@ -6,29 +6,19 @@ using UnityEngine.UI;
 
 public class CitateKnob : MonoBehaviour
 {
-    [SerializeField] Citates citate;
-    [SerializeField] TextMeshProUGUI title, text;
+    [SerializeField] RectTransform content;
+    const float xConst = -820;
     [SerializeField] Image image;
-    static List<CitateKnob> buttons = new List<CitateKnob>();
+    [SerializeField] int num, outof = 6;
+
+    float myNum;
 
     private void Start()
     {
-        buttons.Add(this);
+        myNum = ((float)num) / outof - (0.5f / outof);
     }
-    public void OnClick()
+    public void OnChange()
     {
-        foreach (var knob in buttons)
-        {
-            knob.Activate(knob == this);
-        }
-    }
-    void Activate(bool active)
-    {
-        image.color = active ? new Color(0xD2 / 255f, 0x10 / 255f, 0x11 / 255f) : Color.white;
-        if (active)
-        {
-            title.text = citate.title;
-            text.text = citate.text;
-        }
+        image.color = (Mathf.Abs(content.anchoredPosition.x / xConst + 1 - num) < .5f) ? new Color(0xD2 / 255f, 0x10 / 255f, 0x11 / 255f) : Color.white;
     }
 }

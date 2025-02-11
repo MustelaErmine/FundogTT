@@ -35,23 +35,26 @@ public class TrainManger : MonoBehaviour
     }
     public void SetTrain(GameObject gameObject, Train train, int number)
     {
+        bool interactable = number == PlayerPrefs.GetInt("day", 0);
         Transform panelTransfrom = gameObject.transform;
         if (!train.isTest)
         {
             panelTransfrom.GetChild(0).GetComponent<TextMeshProUGUI>().text = (number + 1).ToString();
             panelTransfrom.GetChild(3).GetComponent<TextMeshProUGUI>().text = $"REST TIME - {train.rest} SEC";
-            panelTransfrom.GetChild(4).GetComponent<Button>().interactable = number == PlayerPrefs.GetInt("day", 0);
-            
+            panelTransfrom.GetChild(4).GetComponent<Button>().interactable = interactable;
+
             Transform frame = panelTransfrom.GetChild(2);
             for (int i = 0; i < 5; i++)
             {
                 frame.GetChild(i).GetComponentInChildren<TextMeshProUGUI>().text = train.pullUps[i].ToString();
             }
-        } else
+        } 
+        else
         {
             panelTransfrom.GetChild(0).GetComponent<TextMeshProUGUI>().text = (number + 1).ToString();
-            panelTransfrom.GetChild(3).GetComponentInChildren<Button>().interactable = number == PlayerPrefs.GetInt("day", 0);
+            panelTransfrom.GetChild(3).GetComponent<Button>().interactable = interactable;
         }
+        panelTransfrom.GetComponent<Button>().interactable = interactable;
     }
     public void Increase()
     {
