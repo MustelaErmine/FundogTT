@@ -35,6 +35,7 @@ public class TrainManger : MonoBehaviour
     }
     public void SetTrain(GameObject gameObject, Train train, int number)
     {
+        bool done = number < PlayerPrefs.GetInt("day", 0);
         bool interactable = number == PlayerPrefs.GetInt("day", 0);
         Transform panelTransfrom = gameObject.transform;
         if (!train.isTest)
@@ -53,6 +54,13 @@ public class TrainManger : MonoBehaviour
         {
             panelTransfrom.GetChild(0).GetComponent<TextMeshProUGUI>().text = (number + 1).ToString();
             panelTransfrom.GetChild(3).GetComponent<Button>().interactable = interactable;
+        }
+        if (done)
+        {
+            gameObject.GetComponent<Image>().color = Color.green; //new Color(.7f, .7f, .7f);
+        } else
+        {
+            gameObject.GetComponent<Image>().color = Color.white;
         }
         panelTransfrom.GetComponent<Button>().interactable = interactable;
     }

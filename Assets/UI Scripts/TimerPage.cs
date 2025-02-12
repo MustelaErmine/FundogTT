@@ -8,7 +8,8 @@ public class TimerPage : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textMesh, pauseText;
     [SerializeField] Image pausebtnImage;
-    [SerializeField] Sprite pause, play; 
+    [SerializeField] Sprite pause, play;
+    [SerializeField] Animator animator;
     float timeStarted;
     bool paused = false;
     bool started = false;
@@ -43,6 +44,7 @@ public class TimerPage : MonoBehaviour
             paused = false;
             pausebtnImage.sprite= pause;
             pauseText.text = "Pause";
+            animator.SetBool("Cycling", true);
         }
         else
         {
@@ -52,6 +54,7 @@ public class TimerPage : MonoBehaviour
                 paused = false;
                 pausebtnImage.sprite = pause;
                 pauseText.text = "Pause";
+                animator.SetBool("Cycling", true);
             }
             else
             {
@@ -59,6 +62,7 @@ public class TimerPage : MonoBehaviour
                 paused = true;
                 pausebtnImage.sprite = play;
                 pauseText.text = "Play";
+                animator.SetBool("Cycling", false);
             }
         }
     }
@@ -69,5 +73,6 @@ public class TimerPage : MonoBehaviour
         textMesh.text = "00:00";
         pausebtnImage.sprite = play;
         pauseText.text = "Play";
+        animator.SetBool("Cycling", false);
     }
 }
